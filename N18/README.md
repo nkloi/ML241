@@ -24,6 +24,7 @@ Dataset được sử dụng trong dự án này có thể tải xuống từ đ
 [Link Dataset](https://drive.google.com/drive/folders/1XkmeU5rGCft0SHc9c3X6LketgfiNTCKS?usp=sharing)
 
 [Link Model](https://drive.google.com/drive/folders/17D1AApf118ZWjPpfhi3YkcaovjHREfQD?usp=sharing)
+
 ---
 
 ## Các Thành Phần Chính
