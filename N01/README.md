@@ -39,15 +39,17 @@ Chatbox sẽ hoạt động trên server mà ngrok mở lên.
 ## Hình Ảnh Minh Họa (Project Illustrations)
 
 ### Hình 1: Giao Diện Chatbox
-![Hình Ảnh 1](ML241/N01/img/1.jpg)
-Giao diện chatbox pháp lý với thiết kế bằng streamlit.
+![Hình 1: Giao Diện Chatbox](img/1.jpg)
+Giao diện chatbox pháp lý với thiết kế bằng Streamlit.
 
 ### Hình 2: Quá Trình Huấn Luyện Mô Hình
-![Hình Ảnh 2](ML241/N01/img/2.jpg)
-Nhập vào câu hỏi.
+![Hình 2: Quá Trình Huấn Luyện Mô Hình](img/2.jpg)
+Nhập vào câu hỏi để kiểm tra.
+
 ### Hình 3: Kết Quả Truy Vấn
-![Hình Ảnh 3](ML241/N01/img/3.jpg)
-Model phản hồi câu trả lời.
+![Hình 3: Kết Quả Truy Vấn](img/3.jpg)
+Model phản hồi câu trả lời phù hợp với câu hỏi.
+
 
 ## Video Hướng Dẫn (Tutorial Videos)
 Tham khảo các video dưới đây để hiểu rõ cách huấn luyện và sử dụng chatbox:
