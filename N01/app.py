@@ -1,6 +1,7 @@
 import streamlit as st
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
+import re
 
 def preprocess_text(text):
     # Bước 1: Làm sạch
@@ -43,18 +44,10 @@ def initialize_model_and_tokenizer(model_name):
     Sau khi tải, mô hình sẽ được đưa đến thiết bị tương ứng (GPU hoặc CPU).
     """
     try:
-        # Tải tokenizer từ HuggingFace
         tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-        # Tải mô hình từ HuggingFace
         model = AutoModelForCausalLM.from_pretrained(model_name)
-
-        # Chuyển mô hình đến thiết bị (GPU/CPU)
         model.to(DEVICE)
-
-        # Đặt mô hình ở chế độ đánh giá
         model.eval()
-
         return tokenizer, model
 
     except Exception as e:
@@ -63,7 +56,7 @@ def initialize_model_and_tokenizer(model_name):
         st.stop()
 
 # Khởi tạo tokenizer và model
-tokenizer, model = initialize_model_and_tokenizer(HF_MODEL_NAME)
+tokenizer, model = initialize_model_and_tokenizer(HF_MODEL_NAME='Lusic/testmodel')
 
 # -----------------------------------
 # Giao diện Streamlit
@@ -82,15 +75,12 @@ st.markdown(
 
 # Nhập tin nhắn của người dùng
 user_input = st.text_area("📝 Tin nhắn của bạn:", height=150, placeholder="Nhập nội dung tin nhắn tại đây...")
-
-# Nút Generate để sinh phản hồi từ mô hình
 if st.button("💬 Tạo phản hồi"):
     if user_input.strip() == "":  # Kiểm tra nếu người dùng chưa nhập nội dung
         st.warning("Vui lòng nhập tin nhắn để nhận phản hồi.")
     else:
         with st.spinner("🔄 Đang sinh phản hồi..."):
             try:
-                # Chuẩn bị dữ liệu đầu vào cho mô hình
                 messages = [
                     {"role": "user", "content": user_input}
                 ]
@@ -99,7 +89,7 @@ if st.button("💬 Tạo phản hồi"):
                 inputs = tokenizer.apply_chat_template(
                     messages,
                     tokenize=True,
-                    add_generation_prompt=True,  # Thêm prompt cho mô hình sinh văn bản
+                    add_generation_prompt=True,  
                     return_tensors="pt",
                 ).to(DEVICE)
 
@@ -112,15 +102,12 @@ if st.button("💬 Tạo phản hồi"):
                     top_p=TOP_P,
                 )
 
-                # Giải mã và hiển thị phản hồi
                 response = tokenizer.batch_decode(outputs, skip_special_tokens=True)
 
-                # Hiển thị câu trả lời từ mô hình
                 st.success("🗨️ **Phản hồi từ mô hình:**")
                 st.write(preprocess_text(response[0]))
 
             except Exception as e:
-                # Hiển thị lỗi nếu quá trình sinh văn bản gặp vấn đề
                 st.error(f"Lỗi khi tạo phản hồi: {e}")
 
 # -----------------------------------
