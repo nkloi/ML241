@@ -3,20 +3,6 @@
 ## Giới Thiệu (Introduction)
 Dự án này xây dựng một hệ thống chatbox thông minh để trả lời các câu hỏi liên quan đến luật pháp. Chatbox được phát triển dựa trên mô hình `unsloth/Llama-3.2-1B-Instruct` và huấn luyện thông qua notebook `training_chat_bot.ipynb`.
 
-## Giao Diện Minh Họa (Interface Illustrations)
-
-### 1. Giao Diện Chatbox (Chatbox Interface)
-![Chatbox Legal Interface](/api/placeholder/600/400)
-Giao diện thân thiện và dễ sử dụng cho việc tra cứu thông tin pháp lý.
-
-### 2. Quá Trình Huấn Luyện Mô Hình (Model Training Process)
-![Model Training Visualization](/api/placeholder/600/400)
-Minh họa quy trình huấn luyện mô hình trí tuệ nhân tạo trên tập dữ liệu luật pháp.
-
-### 3. Kết Quả Truy Vấn (Query Results)
-![Legal Query Results](/api/placeholder/600/400)
-Ví dụ về kết quả trả lời câu hỏi pháp lý chi tiết và chính xác.
-
 ## Yêu Cầu Hệ Thống (System Requirements)
 * **Python**: Phiên bản >= 3.8
 * **Thư viện cần thiết**:
@@ -49,22 +35,17 @@ Chatbox sẽ hoạt động trên server mà ngrok mở lên.
 * `app.py`: File chạy ứng dụng chatbox.
 * `README.md`: Tài liệu hướng dẫn sử dụng dự án.
 
-# ML241 - Chatbox Câu Hỏi Về Luật (Legal Question Chatbox)
-
-## Giới Thiệu (Introduction)
-Dự án này xây dựng một hệ thống chatbox thông minh để trả lời các câu hỏi liên quan đến luật pháp. Chatbox được phát triển dựa trên mô hình `unsloth/Llama-3.2-1B-Instruct` và huấn luyện thông qua notebook `training_chat_bot.ipynb`.
-
 ## Hình Ảnh Minh Họa (Project Illustrations)
 
 ### Hình 1: Giao Diện Chatbox
-![Hình Ảnh 1](/img/1.png)
+![Hình Ảnh 1](/img/1.jpg)
 Giao diện chatbox pháp lý với thiết kế bằng streamlit.
 
 ### Hình 2: Quá Trình Huấn Luyện Mô Hình
-![Hình Ảnh 2](/img/2.png)
+![Hình Ảnh 2](/img/2.jpg)
 Nhập vào câu hỏi.
 ### Hình 3: Kết Quả Truy Vấn
-![Hình Ảnh 3](/img/3.png)
+![Hình Ảnh 3](/img/3.jpg)
 Model phản hồi câu trả lời.
 
 ## Video Hướng Dẫn (Tutorial Videos)
@@ -82,4 +63,3 @@ Tham khảo các video dưới đây để hiểu rõ cách huấn luyện và s
 
 Với tài liệu này, bạn sẽ dễ dàng triển khai và sử dụng hệ thống chatbox thông minh cho các câu hỏi pháp lý. 🚀
 
-Với tài liệu này, bạn sẽ dễ dàng triển khai và sử dụng hệ thống chatbox thông minh cho các câu hỏi pháp lý. 🚀
