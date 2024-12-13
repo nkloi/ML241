@@ -3,6 +3,7 @@
 ## Giới Thiệu (Introduction)
 Dự án này xây dựng một hệ thống chatbox thông minh để trả lời các câu hỏi liên quan đến luật pháp. Chatbox được phát triển dựa trên mô hình `unsloth/Llama-3.2-1B-Instruct` và huấn luyện thông qua notebook `training_chat_bot.ipynb`.
 
+
 ## Yêu Cầu Hệ Thống (System Requirements)
 * **Python**: Phiên bản >= 3.8
 * **Thư viện cần thiết**:
@@ -38,14 +39,14 @@ Chatbox sẽ hoạt động trên server mà ngrok mở lên.
 ## Hình Ảnh Minh Họa (Project Illustrations)
 
 ### Hình 1: Giao Diện Chatbox
-![Hình Ảnh 1](/img/1.jpg)
+![Hình Ảnh 1](ML241/N01/img/1.jpg)
 Giao diện chatbox pháp lý với thiết kế bằng streamlit.
 
 ### Hình 2: Quá Trình Huấn Luyện Mô Hình
-![Hình Ảnh 2](/img/2.jpg)
+![Hình Ảnh 2](ML241/N01/img/2.jpg)
 Nhập vào câu hỏi.
 ### Hình 3: Kết Quả Truy Vấn
-![Hình Ảnh 3](/img/3.jpg)
+![Hình Ảnh 3](ML241/N01/img/3.jpg)
 Model phản hồi câu trả lời.
 
 ## Video Hướng Dẫn (Tutorial Videos)
