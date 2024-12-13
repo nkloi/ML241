@@ -2,6 +2,7 @@
 Nhóm 11 - ML241:
 Thành viên: Nguyễn Lê Quang Huy, Kim Sô Vút Thi
 
+(Mở READ.md mode Code, không phải Preview) 
 Hướng dẫn chạy code mô hình "Dự đoán chất lượng sản phẩm rượu đỏ Bồ Đào Nha"
 
 Chuẩn bị file dataset, có đường dẫn "ML241/N11/dataset"
