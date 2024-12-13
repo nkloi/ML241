@@ -6,8 +6,8 @@ Thành viên: Nguyễn Lê Quang Huy, Kim Sô Vút Thi
 Hướng dẫn chạy code mô hình "Dự đoán chất lượng sản phẩm rượu đỏ Bồ Đào Nha"
 
 Chuẩn bị file dataset, có đường dẫn "ML241/N11/dataset"
-  Tải xuống máy 
-  Mở sẵn file bằng ứng dụng như Notepad nhằm copy dữ liệu của 1 sản phẩm rượu bất kỳ
+  + Tải xuống máy 
+  + Mở sẵn file bằng ứng dụng như Notepad nhằm copy dữ liệu của 1 sản phẩm rượu bất kỳ
 
 I. Chương trình sử dụng Random Forest, link Google Collab: https://colab.research.google.com/drive/1wWMZFhaolsM_-WAhuZIH9EsLtAbAU9Gt?usp=sharing
   Thầy và các bạn chạy lần lượt các cell code từ trên xuống theo mục lục sau
@@ -28,18 +28,21 @@ I. Chương trình sử dụng Random Forest, link Google Collab: https://colab.
                 Bộ 11 thông số của sản phẩm rượu cần đánh giá:
                                [ 7.9   0.35  0.46  3.6   0.08 15.   37.    1.    3.35  0.86 12.8 ]
                 Chất lượng rượu tốt
-          + Trong code, chọn ngưỡng phân lớp là Quality = 6 (score 1 đến 10), các bạn hãy so sánh:
+          + Trong code, chọn ngưỡng phân lớp cho label là Quality = 6 (score 1 đến 10), các bạn hãy so sánh:
                 Kết quả print " Chất lượng rượu ...... "    so với   Con số cuối cùng (Quality thật sự) trong list mà các bạn lấy 11 giá trị làm input
                                                                         (từ dataset)  <6 Chưa tốt      và     >=6 Chất lượng tốt
       *
       6. Mô phỏng đơn giản chiến lược marketing của hãng (Tạo 50 mẫu input ngẫu nhiên)
     -----------
       Github operation commands (Don't open here)
-    
+    *
 II. Chương trình sử dụng Logistic Regression, link Google Collab: https://colab.research.google.com/drive/19OHkWdfYxcNfwIGq1UK5JZpIE3FB-q4C?usp=sharing
-  Thầy và các bạn cũng chạy lần lượt các cell code từ trên xuống đến khi gặp:
+  
+   Trước khi load dataset: Mọi người chịu khó upload file dataset (đã tải từ "ML241/N11/dataset/winequality-red.csv") lên thẳng trang Google Collab của link trên 
+   (vì em không thể clone folder repo vào 2 notebook khác nhau đc)
+   
+   Thầy và các bạn cũng chạy lần lượt các cell code từ trên xuống đến khi gặp:
   .........
         A. Build a Predictive model (single manual input)
         *****Thực hiện tương tự như Chương trình (I) trên
-  ---------      
-        B. Mô phỏng đơn giản chiến lược marketing của hãng (Tạo 50 mẫu input ngẫu nhiên)
+  ------B. Mô phỏng đơn giản chiến lược marketing của hãng (Tạo 50 mẫu input ngẫu nhiên)
