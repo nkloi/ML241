@@ -82,9 +82,3 @@ A confusion matrix is a performance measurement tool for machine learning classi
 ![Add_results](https://github.com/0607bkhanhhoang/241_ML_Project_PPE_Segment/blob/main/images/clothes_1.jpg)
 
 ![Add_results](https://github.com/0607bkhanhhoang/241_ML_Project_PPE_Segment/blob/main/images/clothes_2.jpg)
-
-
-
-
-
-
