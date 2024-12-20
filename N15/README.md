@@ -1,7 +1,7 @@
 ****VEHICLE LICENSE PLATE DETECTION AND RECOGNITION USING YOLOV8****
 
 **Introduction**
-The project "Vehicle License Plate Detection and Recognition Using YOLOv8" aims to develop an automated system to detect and read license plates from images or videos. The system leverages YOLOv8, an advanced deep learning architecture in image recognition.
+   The project "Vehicle License Plate Detection and Recognition Using YOLOv8" aims to develop an automated system to detect and read license plates from images or videos. The system leverages YOLOv8, an advanced deep learning architecture in image recognition.
 
 **Objectives**
 - Build a system to automatically detect and recognize vehicle license plates from images/videos.
