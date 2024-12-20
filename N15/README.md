@@ -1,70 +1,34 @@
-# ML241
-# Phát Hiện và Nhận Diện Biển Số Xe Sử Dụng YOLOv8
+**Vehicle License Plate Detection and Recognition Using YOLOv8**
 
-## Giới Thiệu
+**Introduction**
+The project "Vehicle License Plate Detection and Recognition Using YOLOv8" aims to develop an automated system to detect and read license plates from images or videos. The system leverages YOLOv8, an advanced deep learning architecture in image recognition.
 
-Đề tài "Phát hiện và nhận diện biển số xe sử dụng YOLOv8" nhằm phát triển một hệ thống tự động phát hiện và đọc biển số xe từ hình ảnh hoặc video.
-Hệ thống áp dụng YOLOv8 - một kiến trúc deep learning tiên tiến trong lĩnh vực nhận diện ảnh.
+**Objectives**
+- Build a system to automatically detect and recognize vehicle license plates from images/videos.
+- Improve the accuracy of license plate recognition.
+- Integrate OCR (Optical Character Recognition) for reading license plate content.
 
-## Mục Tiêu
+**Technologies Used**
+- YOLOv8: A deep learning model for object detection in images.
+- Python: The primary programming language for developing the system.
+- OpenCV: A library for image processing.
+- PyTorch: A framework for building deep learning models.
+- Tesseract OCR: For recognizing characters on license plates.
 
-- Xây dựng hệ thống tự động phát hiện và nhận diện biển số xe từ ảnh/video.
-- Nâng cao độ chính xác trong việc nhận diện biển số.
-- Tích hợp đọc nội dung biển số sử dụng OCR (Optical Character Recognition).
-
-## Công Nghệ Sử Dụng
-
-- **YOLOv8**: Mô hình deep learning cho nhận diện đối tượng trong ảnh.
-- **Python**: Ngôn ngữ chính cho việc xây dựng mô hình.
-- **OpenCV**: Thư viện xử lý ảnh.
-- **PyTorch**: Framework xây dựng mô hình học sâu.
-- **Tesseract OCR**: Nhận dạng ký tự từ biển số.
-
-## Tính Năng
-
-1. **Phát hiện biển số xe**:
-   - Nhận diện khu vực biển số trong hình ảnh/video.
-2. **Nhận diện nội dung biển số**:
-   - Sử dụng OCR để đọc nội dung biển số.
-3. **Xử lý video theo thời gian thực**:
-   - Nhận diện liên tục từ luồng video.
-
-## Cài Đặt
-
-1. Clone repo:
-   ```bash
-   git clone https://github.com/your-repo/license-plate-recognition-yolov8.git
-   cd license-plate-recognition-yolov8
-   ```
-
-2. Cài đặt các thư viện cần thiết:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Tải trọng mô hình YOLOv8:
-   - Tải từ [Ultralytics](https://github.com/ultralytics/ultralytics).
-
-## Cách Sử Dụng
-
-1. Chạy demo trên tập hình ảnh:
-   ```bash
-   python detect.py --source path/to/image.jpg --weights path/to/yolov8-weights.pt
-   ```
-
-2. Nhận diện biển số từ video:
-   ```bash
-   python detect.py --source path/to/video.mp4 --weights path/to/yolov8-weights.pt
-   ```
-
-3. Kết hợp OCR để đọc nội dung biển số:
-   ```bash
-   python detect_with_ocr.py --source path/to/image_or_video
-   ```
-
-## Cấu Trúc Thư Mục
-
-- **/models**: Chứa trọng YOLOv8.
-- **/data**: Chứa dữ liệu dùng để huấn luyện và test.
-- **/scripts**: Các script xử lý dữ liệu và nhận diện.
-- **/outputs**: Kết quả đầu ra.
+**Features**
+1. License Plate Detection:
+   Identifies the region of the license plate in images/videos.
+2. License Plate Content Recognition:
+   Uses OCR to extract the content of the license plate.
+3. Real-Time Video Processing:
+   Continuously detects and recognizes license plates from video streams.
+   
+**Setup Instructions**
+1. Download and Extract the ZIP File:
+- Download the provided ZIP file containing the project code.
+- Extract the contents of the ZIP file into a folder of your choice.
+2. Run the Program:
+- Locate the file named main.py in the extracted folder.
+- Run main.py to execute the program.
+3. Customize Image Data:
+Update or replace the image files in the LicPlateImages folder to use your own data.
