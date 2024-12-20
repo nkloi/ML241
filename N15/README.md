@@ -31,4 +31,4 @@
 - Locate the file named main.py in the extracted folder.
 - Run main.py to execute the program.
 3. Customize Image Data:
-Update or replace the image files in the LicPlateImages folder to use your own data.
+- Update or replace the image files in the LicPlateImages folder to use your own data.
